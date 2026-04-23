@@ -2,9 +2,9 @@
 
 Slide deck and materials for the Week 13 lab session of POLI 3148 (2026 Spring, The University of Hong Kong). The lab walks students through publishing a local webpage to GitHub Pages using their AI coding assistant (GitHub Copilot).
 
-**Live deck:** https://kedirdan.github.io/POLI3148_2026Spring_GitHubPages/
+**Online deck:** https://kedirdan.github.io/POLI3148_2026Spring_GitHubPages/
 
-**Demo project** (used by the Clone prompt): [`POLI3148_2026Spring_GitHubPagesDemo`](https://github.com/Kedirdan/POLI3148_2026Spring_GitHubPagesDemo) · [live page](https://kedirdan.github.io/POLI3148_2026Spring_GitHubPagesDemo/)
+**Demo project** (used by the Clone prompt): [`POLI3148_2026Spring_GitHubPagesDemo`](https://github.com/Kedirdan/POLI3148_2026Spring_GitHubPagesDemo) · [online page](https://kedirdan.github.io/POLI3148_2026Spring_GitHubPagesDemo/)
 
 ## Contents
 
