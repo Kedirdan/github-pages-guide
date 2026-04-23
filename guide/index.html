@@ -572,7 +572,7 @@ kbd {
 
   <p>Imagine you are writing a short description of HKU. You write version one. You add a word, change a verb, add a fact. You save each time. Without Git, you end up with files called <em>draft 1</em>, <em>draft 2</em>, <em>final</em>, and <em>final version 2</em>. You have probably done something like this before.</p>
 
-  <p>With Git, every save becomes a <strong>commit</strong> — a labeled snapshot of your project at that moment. Each commit has a name (technically a long hash like <code>a1b2c3</code>, but we simplify to <code>v1</code>, <code>v2</code>, <code>v3</code>, <code>v4</code> for teaching) and a <strong>message</strong>, a short note of what changed.</p>
+  <p>With Git, every save becomes a <strong>commit</strong> — a labelled snapshot of your project at that moment. Each commit has a name (technically a long hash like <code>a1b2c3</code>, but we simplify to <code>v1</code>, <code>v2</code>, <code>v3</code>, <code>v4</code> for teaching) and a <strong>message</strong>, a short note of what changed.</p>
 
   <p>And here is the part that matters. <strong>All four versions are still there, on your computer, at the same time.</strong> You can always go back to any one of them.</p>
 
@@ -584,7 +584,7 @@ kbd {
   <p>Code moves between your computer and GitHub in two directions. You upload it with <code>git push</code>, and download it with <code>git pull</code>. Git does not sync automatically — it is entirely up to you, or up to your AI assistant, to decide when to sync.</p>
 
   <div class="callout note">
-    <span class="label">Note</span>
+    <span class="label">You don't type these yourself</span>
     <p>In this lab, you never type <code>git push</code> or <code>git pull</code> yourself. Your AI assistant does it for you. Understanding the concept is enough.</p>
   </div>
 
@@ -605,12 +605,12 @@ kbd {
   </div>
 
   <h4 id="pages">GitHub Pages</h4>
-  <p>GitHub stores your code, and it can also serve your code as a <strong>webpage</strong> — for free, with a public URL anyone can open. That's <strong>GitHub Pages</strong>.</p>
+  <p>GitHub stores your code, and it can also serve that code as a <strong>webpage</strong> — for free, with a public URL anyone can open. That's <strong>GitHub Pages</strong>.</p>
 
   <p>For each repository, there are two URLs you should know:</p>
   <ul>
-    <li><code>github.com/&lt;your-name&gt;/&lt;repo&gt;</code> — this is the <strong>code</strong>.</li>
-    <li><code>&lt;your-name&gt;.github.io/&lt;repo&gt;/</code> — this is the <strong>webpage</strong>.</li>
+    <li><code>github.com/&lt;your-username&gt;/&lt;repo&gt;</code> — this is the <strong>code</strong>.</li>
+    <li><code>&lt;your-username&gt;.github.io/&lt;repo&gt;/</code> — this is the <strong>webpage</strong>.</li>
   </ul>
 
   <p>To make this work, we publish from a folder inside the repo called <code>/docs/</code>. That way your full project lives in the repo while only the web-ready files go online. Combined with your free Student Pro benefit, you can keep the code <strong>private</strong> while the webpage stays <strong>public</strong>.</p>
@@ -620,7 +620,7 @@ kbd {
   <h2>Part 2</h2>
   <h3>The edit loop: talking to your AI</h3>
 
-  <p>Managing your GitHub Pages site is simple: you change anything on it just by talking to your AI assistant. No server to configure, no commands to memorize. Any language works, as long as you are clear.</p>
+  <p>Managing your GitHub Pages site is simple: you change anything on it just by talking to your AI assistant. No server to configure, no commands to memorise. Any language works, as long as you are clear.</p>
 
   <p>Here is what it looks like in practice. You open Copilot Chat and type one message:</p>
 
@@ -705,11 +705,11 @@ then commit and push.</code></pre>
   <p>Prompt 1 tries to install <code>gh</code> through your operating system's package manager first (Homebrew on macOS, winget on Windows). If the package manager is missing or fails, Copilot stops and points you to a manual installer.</p>
 
   <h5>Windows — winget not found</h5>
-  <p>If you see an error saying <code>winget</code> is not recognized:</p>
+  <p>If you see an error saying <code>winget</code> is not recognised:</p>
   <ol>
     <li>Go to <a href="https://github.com/cli/cli/releases/latest" target="_blank">github.com/cli/cli/releases/latest</a> and, under <strong>Assets</strong>, download the file ending in <code>_windows_amd64.msi</code>. (Or grab it from <a href="https://cli.github.com" target="_blank">cli.github.com</a>, which points to the same place.)</li>
     <li>Double-click the <code>.msi</code> and follow the installer.</li>
-    <li>Restart VS Code. If the new <code>gh</code> command is still not recognized, restart Windows as well.</li>
+    <li>Restart VS Code. If the new <code>gh</code> command is still not recognised, restart Windows as well.</li>
     <li>Re-paste Prompt 1 into Copilot Chat to continue.</li>
   </ol>
 
@@ -1042,7 +1042,7 @@ repository gone, but keep my local copy.</code></pre>
     </div>
     <div class="card">
       <h6>"Not a git repository" error</h6>
-      <p>Prompt 2 assumes your folder is ready to initialize. Ask Copilot: <em>"initialise git in this folder and retry Prompt 2."</em></p>
+      <p>Prompt 2 assumes your folder is ready to initialise. Ask Copilot: <em>"initialise git in this folder and retry Prompt 2."</em></p>
     </div>
     <div class="card">
       <h6>Changes don't appear after pushing</h6>
@@ -1068,8 +1068,8 @@ repository gone, but keep my local copy.</code></pre>
   </div>
 
   <h4>M1. Install <code>gh</code> (GitHub CLI)</h4>
-  <p><strong>macOS:</strong> download the signed <code>.pkg</code> from <a href="https://cli.github.com" target="_blank">cli.github.com</a> and double-click to install.</p>
-  <p><strong>Windows:</strong> download the <code>.msi</code> from the same site, run it, and restart VS Code (and Windows, if the command is still not recognized afterwards).</p>
+  <p><strong>macOS:</strong> at <a href="https://github.com/cli/cli/releases/latest" target="_blank">github.com/cli/cli/releases/latest</a>, download <code>_macOS_arm64.pkg</code> (Apple Silicon) or <code>_macOS_amd64.pkg</code> (Intel), and double-click to install.</p>
+  <p><strong>Windows:</strong> at the same page, download the <code>_windows_amd64.msi</code> file, run it, and restart VS Code (and Windows, if the command is still not recognised afterwards).</p>
   <p>Verify the install in a terminal:</p>
   <pre><code>gh --version</code></pre>
 
@@ -1163,7 +1163,7 @@ git push</code></pre>
 
   <ul>
     <li><strong>Your own personal website.</strong> A single HTML file, with a biography, some links, and maybe a photo. Put it on GitHub Pages and you have a permanent web address.</li>
-    <li><strong>A class project portfolio.</strong> Put the visualizations and write-ups from each of your POLI courses into separate folders, each deployed the same way.</li>
+    <li><strong>A class project portfolio.</strong> Put the visualisations and write-ups from each of your POLI courses into separate folders, each deployed the same way.</li>
     <li><strong>A collaborative research site.</strong> Keep the repo private, share read access with co-authors, and publish the front page as a public GitHub Pages site.</li>
   </ul>
 
